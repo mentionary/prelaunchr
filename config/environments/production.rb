@@ -22,6 +22,9 @@ Prelaunchr::Application.configure do
 
   config.assets.precompile += %w( core.css bootstrap.css reset.css )
 
+  #jdr added to deply to heroku
+  config.assets.initialize_on_precompile = false
+
   # Defaults to nil and saved in location specified by config.assets.prefix
   # config.assets.manifest = YOUR_PATH
 
